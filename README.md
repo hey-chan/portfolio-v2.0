@@ -1,73 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) using the basic template.
+# Portfolio redesign
 
-## What's in the basic template?
-- It includes node-sass, and a style.scss (and removes all .css files)
-- It doesn't use serviceWorker
-- It replaces the react favicon with a flower of life icon
+Intention: use React's single page application to redesign current page
 
-## Available Scripts
+# **Why the need to transform**
 
-In the project directory, you can run:
+Personally I'm not a fan of the layout of my landing and child page.
 
-### `yarn start`
+**The landing page**
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+On the loading page, I have made use of images as a `<href>` which I feel makes the home page distracting. Additionally, I did consider the user interface (UI) and user experience (UX), and thought about the accessibility of it.  While a normal person might be able to move their cursor over one of the images, what if a user doesn't know where to go. What if they wanted information on me. While the hover effects might add to the user interface and add some flair to the home page, is that worth it at the potential cost of user experience (UX)? 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+**Child pages**
 
-### `yarn test`
+For the time being, I have not made much use of the child pages. This can become obvious as a user goes about and peruse through the pages. One noticeable thing is the unused screen real estate, and this is quite noticeable on much bigger screens
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Image sources**
 
-### `yarn build`
+Ideally I want to reduce the images that I use, especially of ones containing pictures of me. As a portfolio page, I want to make it more about my projects and skills. Also additionally, I have noticed that some of these images take a few seconds to load, on part of the larger than expected image size. This is noticeable in my landing page, as the top image tries and loads for the first time.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Solution
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Upon learning React's single page application, my thought turned to how I could potentially transform my page into something more compact, professional, and with a simple minimalist flair. To solve the problems of the above, my thoughts about this project were:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Get rid of the landing page and simply convert it to a single page application. No need for the extra pages!
+2. Relating to part 1, get rid of images as a `href`. I personally no longer find this to be ideal
 
-### `yarn eject`
+For the time being, I have been checking out how portfolio pages could be created using React, and getting some potential design inspiration from those examples
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Misc.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Page should try and be responsive
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Hover features for side projects potentially
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
