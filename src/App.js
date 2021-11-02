@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Intro from './components/intro/Intro.js'
 import AboutMe from './components/aboutme/AboutMe.js'
 import Contact from './components/contact/Contact.js'
@@ -7,9 +7,10 @@ import SideProjects from './components/sideprojects/SideProjects.js'
 import './app.scss'
 
 const App = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className='app' >
-      <Navbar />
+      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       {/* Hello, and welcome to Matthew's portfolio. This is a work in progress. */}
       <div className='section'>
         <Intro />
