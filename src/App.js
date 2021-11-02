@@ -5,12 +5,14 @@ import Contact from './components/contact/Contact.js'
 import Navbar from './components/navbar/Navbar.js'
 import SideProjects from './components/sideprojects/SideProjects.js'
 import './app.scss'
+import Menu from './components/menubar/Menu.jsx'
 
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className='app' >
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       {/* Hello, and welcome to Matthew's portfolio. This is a work in progress. */}
       <div className='section'>
         <Intro />

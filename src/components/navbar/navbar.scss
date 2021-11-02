@@ -7,7 +7,7 @@
   color: black;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 3;
   transition: all 1s ease;
 
   .wrapper{  
@@ -26,16 +26,19 @@
       font-weight: 700;
       text-decoration: none;
       color: inherit;
-      margin-right: 40px;
+      margin-right: 60px;
+      
     }
 
     .itemContainer{
       display: flex;
       align-items: center;
+      
 
       .icon{
-        font-size: 18px;
-        margin-right: 5px;
+        font-size: 25px;
+        margin-right: 15px;
+        cursor: pointer;
       }
     }
   }
