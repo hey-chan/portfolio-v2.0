@@ -48,6 +48,27 @@
 
     h3{
       font-size: 30px;
+
+      span{
+        font-size: inherit;
+        color: crimson;
+      }
+
+      .ityped-cursor {
+        animation: blink 1s infinite;
+      }
+
+      @keyframes blink {
+        // From 0 to 50%, opacity will be 1
+        50%{
+          opacity: 1;
+        }
+
+        // Onwards opacity will be 0
+        100%{
+          opacity: 0;
+        }
+      }
     }
   }
   a{
