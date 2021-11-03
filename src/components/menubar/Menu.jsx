@@ -18,7 +18,7 @@ export default function Menu({menuOpen, setMenuOpen}) {
         </li>
       </ul>
 
-      <p>By Matthew Liu</p>
+      <p>© Matthew Liu</p>
     </div>
   )
 }

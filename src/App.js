@@ -26,3 +26,5 @@ const App = () => {
 }
 
 export default App
+
+// Huge appreciation to Lama Dev for portfolio inspiration
