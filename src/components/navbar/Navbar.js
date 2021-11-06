@@ -11,11 +11,14 @@ export default function Navbar({menuOpen, setMenuOpen}) {
     <div className={"navbar " + (menuOpen && "active")}>
       <div className="wrapper">
         <div className="left">
-          <a href="#intro" className="logo">陳</a>
+          <a href="#intro" className="logo" id="personalbrand">💻</a>
           <div className="itemContainer">
+            <p>Connect with me via </p>
             <LinkedInIcon className="icon" onClick={() => window.open('https://linkedin.com/in/matthew-c-liu', '_blank')} />
-            <GitHubIcon className="icon" onClick={() => window.open('https://github.com/hey-chan', '_blank')}/>
             <FacebookIcon className="icon" onClick={() => window.open('https://www.facebook.com/iammattnotchan', '_blank')} />
+            <h2>|</h2>
+            <p>See my GitHub </p>
+            <GitHubIcon className="icon" onClick={() => window.open('https://github.com/hey-chan', '_blank')}/>
             {/* <EmailIcon className="icon"/>
             <span>liu.c.matthew@outlook.com</span> */}
           </div>

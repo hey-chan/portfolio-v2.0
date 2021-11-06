@@ -1,16 +1,18 @@
 import "./intro.scss";
-import { init } from "ityped";
+import { init } from "ityped"; // allows for text animations
 import { useEffect, useRef } from "react";
 
 export default function Intro() {
   const textRef = useRef();
 
+
+  // Alternative to componentDidMount()
   useEffect(() => {
     init(textRef.current, {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ["Aspiring software developer", "Personal finance & cryptocurrency enthusiast"],
+      strings: ["Aspiring software developer", "Personal finance & crypto enthusiast"],
     });
   }, []);
 
