@@ -25,10 +25,10 @@ export default function Contact() {
   return (
     <div className="contact" id="contact">
       <div className="left">
-
+       <h1 className="left-title">My contacts</h1>
       </div>
       <div className="right">
-        <h2>Contact</h2>
+        <h1>Contact</h1>
         <form ref={formRef} onSubmit={handleSubmit}>
           <input type="text" placeholder="Name" name="user_name"/>
           <input type="text" placeholder="Subject" name="user_subject" />
