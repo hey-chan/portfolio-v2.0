@@ -10,7 +10,7 @@ export default function AboutMe() {
       <div className="right">
         <div className="right-card bg"></div>
         <div className="right-card">
-          <img src="assets/me-again.jpg" alt="" className="img"/>
+          <img src="assets/me-again.png" alt="" className="img"/>
         </div>
       </div>
     </div>

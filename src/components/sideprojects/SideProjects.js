@@ -3,7 +3,7 @@ import './sideprojects.scss'
 
 export default function SideProjects() {
   return (
-    <div className="projects" id="projects">
+    <div className="sideprojects" id="sideprojects">
       <h1>Portfolio</h1>
       <ul>
         <li></li>

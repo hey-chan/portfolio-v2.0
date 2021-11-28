@@ -6,6 +6,7 @@ import Navbar from './components/navbar/Navbar.js'
 import SideProjects from './components/sideprojects/SideProjects.js'
 import './app.scss'
 import Menu from './components/menubar/Menu.jsx'
+import Projects from './components/projects/Projects.jsx'
 
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,6 +19,7 @@ const App = () => {
         <Intro />
         <AboutMe />
         <SideProjects />
+        <Projects />
         <Contact />
       </div>
       
