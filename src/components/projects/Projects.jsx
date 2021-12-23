@@ -8,14 +8,23 @@ export default function Projects() {
   const projectData = [
     {
       id: "1",
+      icon: ["./assets/html_icon.png", "./assets/css_icon.png", "./assets/js_icon.png"],
+      title: "Portfolio website",
+      desc: "This was my first project for my coding bootcamp, which used HTML, CSS and a bit of JavaScript",
+      src: "https://github.com/hey-chan/T1A2_portfolio",
+      img: "assets/indexhtml.png",
+      app: "https://portfoliositebymatt.netlify.app/"
+    },
+    {
+      id: "2",
       icon: ["./assets/ruby_icon.png"],
       title: "Terminal app",
-      desc: "Used Ruby to create a terminal based application",
+      desc: "In this project, I had used the Ruby programming language to create a terminal based application",
       src: "https://github.com/hey-chan/movie-randomiser-review",
       img: "assets/terminal-app.png" 
     },
     {
-      id: "2",
+      id: "3",
       icon: ["./assets/ruby_icon.png", "./assets/rails_icon.png" ],
       title: "Two-sided marketplace",
       desc: "Using both Ruby and Ruby on Rails framework, I created a prototype two-sided marketplace application",
@@ -37,9 +46,10 @@ export default function Projects() {
   return (
     <div className="projects" id="projects">
       {/* Initial state is 0. When changing, will be 1 * 100vw */}
+        <h1>My projects</h1> 
       <div className="slider" style={{transform: `translateX(-${currentSlide * 100}vw)`}}>
        {projectData.map((project) => (
-       <div className="container">
+         <div className="container">
           <div className="item">
             <div className="left">
               <div className="leftContainer">

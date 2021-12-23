@@ -3,7 +3,7 @@ import Intro from './components/intro/Intro.js'
 import AboutMe from './components/aboutme/AboutMe.js'
 import Contact from './components/contact/Contact.js'
 import Navbar from './components/navbar/Navbar.js'
-import SideProjects from './components/sideprojects/SideProjects.js'
+// import SideProjects from './components/sideprojects/SideProjects.js'
 import './app.scss'
 import Menu from './components/menubar/Menu.jsx'
 import Projects from './components/projects/Projects.jsx'
@@ -18,7 +18,7 @@ const App = () => {
       <div className='section'>
         <Intro />
         <AboutMe />
-        <SideProjects />
+        {/* <SideProjects /> */}
         <Projects />
         <Contact />
       </div>
