@@ -1,11 +1,11 @@
 .projects{
-  background-color: crimson;
+  background-color: #dc143c;
   display: flex;
+  align-items: center;
   h1{
     font-size: 50px;
-    margin-bottom: 800px;
+    margin-bottom: 76vh;
   }
-  align-items: center;
   justify-content: center;
   position: relative;
 
@@ -27,7 +27,7 @@
   }
 
   .slider{
-    height: 350px;
+    height: 400px;
     display: flex;
     position: absolute;
     left: 0;
@@ -82,9 +82,6 @@
               font-size: 20px;
             }
 
-            // p{
-            //   font-size: 13px;
-            // }
 
             .project{
               font-size: 15px;

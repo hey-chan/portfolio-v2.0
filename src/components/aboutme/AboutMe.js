@@ -5,12 +5,21 @@ export default function AboutMe() {
   return (
     <div className="aboutme" id="aboutme">
       <div className="left">
-        <h2>About me</h2>
+        <div className="myself">
+          <h2>About me</h2>
+          <p>Test test tst</p>
+          <p>Test test tst</p>
+          <p>Test test tst</p>
+          <p>Test test tst</p>
+          <p>Test test tst</p>
+          <p>Test test tst</p>
+
+        </div>
       </div>
+
       <div className="right">
-        <div className="right-card bg"></div>
-        <div className="right-card">
-          <img src="assets/me-again.png" alt="" className="img"/>
+        <div className="aboutme-card">
+          <img src="assets/me-again.png" alt="" className="aboutme-img"/>
         </div>
       </div>
     </div>
